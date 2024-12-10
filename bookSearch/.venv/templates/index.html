@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Search{% endblock %}
+
+{% block content %}
+  <h1>Search Books</h1>
+  <div role="search">
+      <input id="search_text" type="search" placeholder="Search">
+      <button id="getBooks" type="Submit">Search</button>
+  </div>
+  <div id="dataGrid" class="overflow-auto"></div>
+  <pre id="errorMsg"></pre>
+{% endblock %}

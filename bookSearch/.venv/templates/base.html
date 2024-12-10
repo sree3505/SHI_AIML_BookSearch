@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pico.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+</body>
+</html>
